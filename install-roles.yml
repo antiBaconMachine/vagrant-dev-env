@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+    - local_action: command ansible-galaxy install -r requirements.yml
+      become: true
